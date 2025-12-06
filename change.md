@@ -4,16 +4,12 @@
 - In `vite.config.ts` make the following change
 
 ```diff
--    react({
--      babel: {
--        plugins: [["babel-plugin-react-compiler"]],
--      },
--    }),
-+    react({
-+      babel: {
-+        //plugins: [["babel-plugin-react-compiler"]],
-+      },
-+    }),
+react({
+babel: {
+-  plugins: [["babel-plugin-react-compiler"]],
++  //plugins: [["babel-plugin-react-compiler"]],
+ },
+}),
 ```
 
 - In `App.tsx` make the following change
